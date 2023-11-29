@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 def islower(c):
     ch = range(97, 123)
     num = ord(c)

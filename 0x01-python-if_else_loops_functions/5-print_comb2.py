@@ -1,2 +1,4 @@
-for i in range(0, 99):
-    print("{num} = 0x{num:x}".format(num=i))
+#!/usr/bin/python3
+for i in range(99):
+        print("{:02d}".format(i), end=",")
+    print("{}".format(99))
