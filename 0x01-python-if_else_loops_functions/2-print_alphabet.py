@@ -2,4 +2,4 @@
 for i in range(97, 123):
     if  101 == i or 113 == i:
         continue
-    print(chr(i), end="")
+    print("{}".format(chr(i)), end="")
