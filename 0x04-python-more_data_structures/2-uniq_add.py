@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-def common_elements(set_1, set_2):
-return (sum(set(my_list)))
+def uniq_add(my_list=[]):
+    return (sum({i for i in my_list}))
