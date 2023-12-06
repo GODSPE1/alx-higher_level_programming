@@ -11,5 +11,5 @@ def square(num):
 def square_matrix_simple(matrix=[]):
     newmatrix = []
     for i in matrix:
-        newmatrix.append(list(map(i, square)))
+        newmatrix.append(list(map(square, i)))
     return newmatrix
