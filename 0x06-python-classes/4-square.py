@@ -8,12 +8,8 @@ class Square:
 
 
     def __init__(self, size=0):
-        """Initializes the square
-        Args:
-            __size: side size of a square
-        Returns:
-            None
-        """
+        '''Initializes the square'''
+        
         if not isinstance(size, int):
             raise TypeError('size must be an integer')
         if (size < 0):
