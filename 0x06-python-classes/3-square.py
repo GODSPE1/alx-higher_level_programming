@@ -9,14 +9,19 @@ class Square:
     """
     This is class square that has a private attributes
 
-    Args:
-        size (int): The side size of the square
 
     Attributes:
-        size (int): The side size of the square
+    size (int): The side size of the square
+    
     """
 
     def __init__(self, size=0):
+        """
+        Initialize the object with the specified size
+        Args:
+        size (int): The side size of the square
+        """
+        
         if not isinstance(size, int):
             raise TypeError('size must be an integer')
         if (size < 0):
