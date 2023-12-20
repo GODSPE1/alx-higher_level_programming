@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-"""a square class"""
+"""A square class"""
 
 class Square:
     """class square that has a private attributes"""
