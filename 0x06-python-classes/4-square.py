@@ -4,32 +4,21 @@
 
 
 class Square:
-    '''This is class square that has a private attributes'''
+    """
+    This is class square that has a private attributes
 
+    Attributes:
+        size: The side size of a square
+    """
 
-    def __init__(self, size=0):
-        self.__size == size
-        '''Initializes the square'''
-        
-    @property
-    def size(self):
-        """getter function for size
-        Returns:
-            The size of the square
-        """
-        return (self.__size)
     
-    @size.setter
-    def size(self, value):
-        """setter function for size
-        Returns:
-            None
-        """
-        if not isinstance(value, int):
+    def __init__(self, size=0):
+        if not isinstance(size, int):
             raise TypeError('size must be an integer')
-        if (self.__size < 0):
+        if (size < 0):
             raise ValueError('size must be >= 0')
-        self.__size = value
+        self.__size = size
+    
 
     def area(self):
         """returns the area square
@@ -38,5 +27,4 @@ class Square:
         Returns:
             None
         """
-        area = self.__size * self.__size
-        return (area)
+        return self.__size ** 2
