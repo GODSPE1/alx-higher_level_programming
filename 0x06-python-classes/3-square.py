@@ -1,12 +1,20 @@
 #!/usr/bin/python3
     
 """
-A Square class
+This module defines a class called square.
 """
 
 
 class Square:
-    '''This is class square that has a private attributes'''
+    """
+    This is class square that has a private attributes
+
+    Args:
+        size: The side size of the square
+
+    Attributes:
+        size: The side size of the square
+    """
 
     def __init__(self, size=0):
         if not isinstance(size, int):
@@ -16,5 +24,11 @@ class Square:
         self.__size = size
 
     def area(self):
+    """
+    Calculates the area of a circle
+
+    Returns:
+        The area of a circle
+    """
         area = self.__size * self.__size
         return area
