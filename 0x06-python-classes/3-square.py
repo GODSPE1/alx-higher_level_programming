@@ -10,10 +10,10 @@ class Square:
     This is class square that has a private attributes
 
     Args:
-        size: The side size of the square
+        size (int): The side size of the square
 
     Attributes:
-        size: The side size of the square
+        size (int): The side size of the square
     """
 
     def __init__(self, size=0):
