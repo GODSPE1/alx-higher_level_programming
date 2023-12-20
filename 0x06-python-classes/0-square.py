@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 
-class Square:
-    """
-    empty class for square
-    """
-    pass
+'''An empty class square'''
 
+
+class Square:
+    """ empty class for square"""
+    pass
