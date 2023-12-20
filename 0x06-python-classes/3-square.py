@@ -7,21 +7,11 @@ This module defines a class called square.
 
 class Square:
     """
-    This is class square that has a private attributes
-
-
-    Attributes:
-    size (int): The side size of the square
-    
+    This is class square 
     """
+    
 
     def __init__(self, size=0):
-        """
-        Initialize the object with the specified size
-        Args:
-        size (int): The side size of the square
-        """
-        
         if not isinstance(size, int):
             raise TypeError('size must be an integer')
         if (size < 0):
