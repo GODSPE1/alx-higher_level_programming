@@ -1,6 +1,8 @@
 #!/usr/bin/python
     
-'''A Square class'''
+"""
+A Square class
+"""
 
 
 class Square:
