@@ -19,11 +19,11 @@ class Square:
         self.__size = size
 
     def area(self):
-    """
-    Calculates the area of a circle
+        """
+        Calculates the area of a circle
 
-    Returns:
-        The area of a circle
-    """
-        area = self.__size * self.__size
+        Returns:
+            The area of a circle
+        """
+        area = self.__size ** 2
         return area
