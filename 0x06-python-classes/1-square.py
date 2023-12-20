@@ -1,13 +1,9 @@
 #!/usr/bin/python3
 
+"""a square class"""
+
 class Square:
-    """
-    class square that has attributes:
-        size
-        """
+    """class square that has a private attributes"""
 
     def __init__(self, size):
-            """
-            iniialization function for the square class
-            """
-            self._size = size
+        self._size = size
