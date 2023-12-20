@@ -13,7 +13,11 @@ class Square:
         size: The side size of a square
 
     Args:
-        size: The side size of square
+        size: The side size of 
+        
+    Raises:
+        - TypeError: If the size is not an integer.
+        - ValueError: If size is less than 0.
     """
     
 
