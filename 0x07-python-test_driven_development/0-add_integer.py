@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 """
 This module supplies one function that
 add the parameters
