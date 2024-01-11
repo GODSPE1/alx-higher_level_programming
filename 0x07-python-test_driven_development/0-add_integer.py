@@ -1,17 +1,23 @@
 #!/usr/bin/python3
 """
-This module supplies one function that add the parameters
+This module supplies one function that
+add the parameters
+khlkljlkjlkh jkhk klihoinmbkho
+
 """
 
+
 def add_integer(a, b=98):
-    """This function adds two numbers
+    """
+    This function adds two numbers
 
     Args:
         a: first number
         b:second number
 
     Raises:
-        raise TypeError if a or b is not an integer or float
+        raise TypeError if a or b is not an 
+        integer or float
 
     Returns:
         Returns an integer addition of two numbers
