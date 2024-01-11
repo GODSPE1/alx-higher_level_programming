@@ -3,20 +3,20 @@
 This module supplies one function that add the parameters
 """
 
-def add_integer(a, b=98):
-    """
-    This function adds two numbers
+    def add_integer(a, b=98):
+        """
+        This function adds two numbers
 
-    Args:
-        a: first number
-        b:second number
+        Args:
+            a (int): first number
+            b (int):second number
 
-    Raises:
-        raise TypeError if a or b is not an integer or float
+        Raises:
+            TypeError: if a or b is not an integer or float
 
-    Returns:
-        Returns an integer addition of two numbers
-    """
+        Returns:
+            returns an integer addition of two numbers
+        """
     if type(a) is not int and type(a) is not float:
         raise TypeError("a must be a integer")
     if type(b) is not int and type(b) is not float:
