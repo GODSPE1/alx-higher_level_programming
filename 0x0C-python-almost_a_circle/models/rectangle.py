@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
     This modules contains Rectangle class that Implement Base class
-"""    
+"""
 from models.base import Base
 
 
@@ -20,7 +20,6 @@ class Rectangle(Base):
         self.height = height
         self.x = x
         self.y = y
-
 
     @property
     def width(self):
@@ -122,17 +121,19 @@ class Rectangle(Base):
             prints the # to stdout torepresent the Rectangle instance
         """
 
-        print("#" * ,end="")
+        print("#" * __nb_objects, end="")
 
     def __str__(self):
         """
             returns a string format of the rectangle
         """
-        print("[{}] ({}) {}/{} - {}/{}".format(type(self).__name__, self.id, self.__x, self.__y, self.__width, self.__height))
+        print("[{}] ({}) {}/{} - {}/{}".format(
+            type(self).__name__, self.id, self.__x, self.__y, self.__width,
+            self.__height))
 
     def __str__(self):
         return (self.__x / self.__y) - (self.__width/self.__height)
-        
+
     def update(self, *args):
         """
             Publc method that assigns attributes
@@ -141,12 +142,11 @@ class Rectangle(Base):
                 *args - list of no-keyworded arguments
                 **kwargs - list of keyworded arguments
         """
-        if  len(args) == 0:
+        if len(args) == 0:
             for key, val in kwargs.items():
                 self.__setattr__(key, val)
 
             return
-
 
             try:
                 self.id = args[0]
@@ -165,4 +165,3 @@ class Rectangle(Base):
                 'id': getattr(self, "id"),
                 'height': getattr(self, "height"),
                 'width': getattr(self, "width")}
-

@@ -2,7 +2,7 @@
 """
     contains class square implements class Rectangle
 """
-from models.recangle import Rectangle
+from models.rectangle import Rectangle
 
 
 class Square(Rectangle):
@@ -32,17 +32,16 @@ class Square(Rectangle):
         def update(self, *args, **kwargs):
             """
                 Publc method that assigns attributes
-            
+
                 Args:
                     *args - list of no-keyworded arguments
                     **kwargs - list of keyworded arguments
             """
-            if  len(args) == 0:
+            if len(args) == 0:
                 for key, val in kwargs.items():
                     self.__setattr__(key, val)
 
                 return
-
 
             try:
                 self.id = args[0]
@@ -56,7 +55,8 @@ class Square(Rectangle):
             """
                 Overloading str function
             """
-            return "[{}] ({}) {}/{} {}".format(type(self).__name__,self.id, self.x, self.y, self.width)
+            return "[{}] ({}) {}/{} {}".format(
+                    type(self).__name__, self.id, self.x, self.y, self.width)
 
         def to_dictionary(self):
             """
