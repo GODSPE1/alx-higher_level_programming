@@ -6,25 +6,24 @@ import unittest
 from models.base import Base
 from models.rectangle import Rectangle
 
+
 class TestRectangle(unittest.TestCase):
     """
         representing testing for Base class
     """
 
     def test_initialization(self):
-        '''. testing initialization of height and width'''
+        ''' testing initialization of height and width'''
         r1 = Rectangle(10, 2)
         self.assertEqual(r1.width, 10)
         self.assertEqual(r1.height, 2)
-
 
         ''' testing initialization again to test id'''
         r2 = Rectangle(2, 10)
         self.assertEqual(r2.width, 2)
         self.assertEqual(r2.height, 10)
 
-
-     '''4. testing initialization including x and y'''
+        ''' testing initialization including x and y'''
         r3 = Rectangle(10, 2, 0, 0, 12)
         self.assertEqual(r3.width, 10)
         self.assertEqual(r3.height, 2)
@@ -32,6 +31,5 @@ class TestRectangle(unittest.TestCase):
         self.assertEqual(r3.y, 0)
 
 
-
-if __name__ =='__main__':
+if __name__ == '__main__':
     unittest main()

@@ -27,4 +27,3 @@ class SquareTest(unittest.TestCase):
         """test y """
 
         self.assertEqual(self.sq.y, 4)
-
