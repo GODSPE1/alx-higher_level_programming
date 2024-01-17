@@ -39,7 +39,7 @@ class Rectangle(Base):
         if type(value) != int:
             raise TypeError("width must be an integer")
         if value <= 0:
-            raise ValueError("width must be >= 0")
+            raise ValueError("width must be > 0")
 
         self.__width = value
 
@@ -118,8 +118,15 @@ class Rectangle(Base):
 
     def display(self):
         """
-            prints the # to stdout torepresent the Rectangle instance
+            prints the # to stdout to represent the Rectangle instance
         """
+        print_symbol = "#"
+
+        for _ in range(self.y):
+            print()
+
+        for i in range(self.height):
+            print("" * self.x + print_symbol * self.width)
 
         print("#" * __nb_objects, end="")
 
