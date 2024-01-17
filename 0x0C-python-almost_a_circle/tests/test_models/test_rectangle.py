@@ -30,6 +30,18 @@ class TestRectangle(unittest.TestCase):
         self.assertEqual(r3.x, 0)
         self.assertEqual(r3.y, 0)
 
+        """testing if width height during instantiation equals 0"""
+    def test_zero_instatiation(self):
+        with self.assertRaises(ValueError) as e:
+            r4 = Rectangle(0, 12)
+
+        error_msg = "width must be >= 0"
+        self.assertEqual(str(e.exception), error_msg)
+
+    def test_zero_instatiation(self):
+        with self.assertRaises(ValueError, msg="height must be > 0"):
+            r5 = Rectangle(12, 0)
+
 
 if __name__ == '__main__':
-    unittest main()
+    unittest.main()
