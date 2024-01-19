@@ -19,6 +19,12 @@ class TestBase(unittest.TestCase):
         '''testing the id'''
         b3 = Base()
         self.assertEqual(b3.id, 3)
+        
+        "testing id to return the number passed"
+        b4 = Base(20)
+        self.assertEqual(b4.id, 20)
+        b5 = Base(5)
+        self.assertEqual(b5.id, 5)
 
 
 if __name__ == '__main__':
