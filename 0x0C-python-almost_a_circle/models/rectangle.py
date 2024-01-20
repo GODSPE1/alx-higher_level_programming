@@ -114,7 +114,7 @@ class Rectangle(Base):
         """
         Returns the area of the Rectangle object
         """
-        return (self.__width * self.__height)
+        return self.__width * self.__height
 
     def display(self):
         """
@@ -160,15 +160,13 @@ class Rectangle(Base):
                 pass
 
     def to_dictionary(self):
-    """
-    Returns the dictionary representation of a Rectangle
-    """
-    return {
-        'id': getattr(self, "id"),
-        'width': getattr(self, "width"),
-        'height': getattr(self, "height"),
-        'x': getattr(self, "x"),
-        'y': getattr(self, "y")
-    }
-
-
+        """
+        Returns the dictionary representation of a Rectangle
+        """
+        return {
+            'id': getattr(self, "id"),
+            'width': getattr(self, "width"),
+            'height': getattr(self, "height"),
+            'x': getattr(self, "x"),
+            'y': getattr(self, "y")
+        }
