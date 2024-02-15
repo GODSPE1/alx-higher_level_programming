@@ -1,7 +1,7 @@
-#0x0E. SQL - More queries
+# 0x0E. SQL - More queries
 
-##Resources
-##Read or watch:
+## Resources
+## Read or watch:
 
 1. How To Create a New User and Grant Permissions in MySQL
 1. How To Use MySQL GRANT Statement To Grant Privileges To a User
