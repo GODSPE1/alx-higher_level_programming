@@ -1,7 +1,7 @@
 -- creates a table first_table in the currnt database
 -- does not fail if data exist
-CREATE DATABASE IF NOT EXISTS hbtn_0c_0;
-USE hbtn_0c_0;
+-- CREATE DATABASE IF NOT EXISTS hbtn_0c_0;
+--USE hbtn_0c_0;
 
 CREATE TABLE IF NOT EXISTS second_table (id INT,
 name VARCHAR(256),
