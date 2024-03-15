@@ -10,9 +10,9 @@ cur.execute(query)
 results = cur.fetchall()
 
 for row in results:
-    print(row)  # Adjust this to format the output according to the example
+    print(row)  # Adjust this  example
 
 db.close()
 
 if __name__ == "__main__":
-    pass  # Code to execute when the script is run directly
+    pass
