@@ -1,4 +1,9 @@
+#!/usr/bin/python3
+"""
+This Module list all states from the database hbtn_0e_0_usa
+"""
 import MySQLdb
+from sys import argv
 
 db = MySQLdb.connect(user="godspe", password="finish", database="hbtn_0e_0_usa"
 )
@@ -10,7 +15,7 @@ cur.execute(query)
 results = cur.fetchall()
 
 for row in results:
-    print(row)  # Adjust this  example
+    print(row)
 
 db.close()
 
