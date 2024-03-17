@@ -8,6 +8,9 @@ import MySQLdb
 from sys import argv
 
 if __name__ == '__main__':
+    if len(argv) != 4:
+        exit(1)
+
     """
     Access to the database and get the states
     from the database.
@@ -21,3 +24,4 @@ if __name__ == '__main__':
 
     for row in rows:
         print(row)
+
