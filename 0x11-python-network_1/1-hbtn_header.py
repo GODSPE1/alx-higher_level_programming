@@ -8,7 +8,9 @@ variable found in the header of the response.
 import urllib.request
 import sys
 
-
 with urllib.request.urlopen(sys.argv[1]) as response:
-    data = response.info()
-    print(data['X-Request-Id'])
+    data = response.info().get('X-Request-Id')
+    print(data)
+
+if __name__ == '__main__':
+    pass
