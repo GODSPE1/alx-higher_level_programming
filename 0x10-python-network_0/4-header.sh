@@ -1,3 +1,3 @@
 #!/bin/bash
 #takes in a URL, sends a request to that URL.
-curl -sI "$1" | grep "Allow:" | cut -d' ' -f 2-
+curl -sL "$1" -H "X-School-User-Id: 98"
