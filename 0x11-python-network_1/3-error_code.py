@@ -8,9 +8,13 @@ import sys
 from urllib.request import Request, urlopen
 from urllib.error import HTTPError
 
-data_request = Request(sys.argv[1])
+url = sys.argv[1]
+data_request = Request(url)
 try:
     with urlopen(data_request) as response:
         print(response.read().decode("ascii"))
 except HTTPError as e:
     print('Error code: ', e.code)
+
+if __name__ == "__main__":
+    pass
