@@ -11,7 +11,7 @@ import sys
 if  __name__ == "__main__":
     """to be executable when imported"""
 
-data = urllib.request.Request(sys.argv[1])
-with urllib.request.urlopen(data) as response:
-    data_response = response.getheader('X-Request-Id')
-    print(data_response)
+    data = urllib.request.Request(sys.argv[1])
+    with urllib.request.urlopen(data) as response:
+        data_response = response.getheader('X-Request-Id')
+        print(data_response)
