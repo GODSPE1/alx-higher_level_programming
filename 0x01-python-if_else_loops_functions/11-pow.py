@@ -4,7 +4,7 @@ def pow(a, b):
 
     for i in range(abs(b)):
         result *= a
-    
+
     if b < 0:
         return 1 / result
     return result
